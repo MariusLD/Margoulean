@@ -3,7 +3,7 @@
 
 
 ## ⚡ What is our project about ?
-
+Our goal is to create some sort of purple drank, but legally approved 🤫
 ## 🧰 List of tools we will be using during our project :
 
 * Management & Communication tools
@@ -18,7 +18,7 @@
 
 * Designing tools
 
-[![My Skills](https://skillicons.dev/icons?i=blender&perline=1)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=blender,ps&perline=2)](https://skillicons.dev)
 
 ## 🚚 Our deliverables
 * Oral part 👉 Public website accessible at : *link*
