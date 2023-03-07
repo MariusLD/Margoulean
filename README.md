@@ -3,7 +3,7 @@
 
 
 ## ⚡ What is our project about ?
-Our goal is to create some sort of purple drank, but legally approved 🤫
+Our goal is to create some sort of purple drank but legally approved, the recipe will remain secret 🤫 (English school project)
 ## 🧰 List of tools we will be using during our project :
 
 * Management & Communication tools
@@ -21,7 +21,7 @@ Our goal is to create some sort of purple drank, but legally approved 🤫
 [![My Skills](https://skillicons.dev/icons?i=blender,ps&perline=2)](https://skillicons.dev)
 
 ## 🚚 Our deliverables
-* Oral part 👉 Public website accessible at : *link*
+* Oral part 👉 Public website accessible at : *link* (hopefully we host it one day)
 * Written part 👉 You're at the right place!
 * Public part 👉 Drinking test session to taste how good Margoulean is!
 
