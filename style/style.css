@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 *{
+    font-family: 'Bebas Neue', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,12 +20,12 @@
 }
 
 nav{
-    font-family: 'Bebas Neue', cursive;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 8%;
+    padding: 15px 8%; /*20px 8%;*/
+    background-color: rgba(211, 211, 211, 0.20);    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,6 +72,7 @@ nav ul li a{
     overflow: hidden;
 }
 .content h1{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
     font-size: 160px;
     color: #a64da6;
     font-weight: 600;
