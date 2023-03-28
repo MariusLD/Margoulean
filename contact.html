@@ -11,18 +11,36 @@
     <body>
         <div class="hero">
             <header-component></header-component>
+
+            <script type="text/javascript">
+                function createBubble(){
+                    const section = document.querySelector('body')
+                    const createElement = document.createElement('span')
+                    var size = Math.random() * 60;
+
+                    createElement.style.width = size + 'px';
+                    createElement.style.height = size + 'px';
+                    createElement.style.left = Math.random() * innerWidth + 'px';
+                    section.appendChild(createElement);
+
+                    setTimeout(() => {
+                        createElement.remove()
+                    }, 25000)
+                }
+                setInterval(createBubble, 500)
+            </script>
+
             <div class="center">
                 <h1>Our Team</h1>
             </div>
             <div class="team-content">
                 <div class="box">
-                    <img src="./ressources/02.png">
+                    <img src="./ressources/01.jpeg">
                     <h3>Anthony Le Gourriérec</h3>
                     <h5>3D Artist</h5>
                     <div class="icons">
-                        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                        <a href="#"><i class="ri-github-fill"></i></a>
-                        <a href="#"></a>
+                        <a href="https://www.linkedin.com/in/anthonylegourrierec/"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://github.com/LeMargoulain"><i class="ri-github-fill"></i></a>
                     </div>
                 </div>
                 <div class="box">
@@ -30,9 +48,18 @@
                     <h3>Marius Le Douarin</h3>
                     <h5>Website Developer</h5>
                     <div class="icons">
-                        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                        <a href="#"><i class="ri-github-fill"></i></a>
-                        <a href="#"></a>
+                        <a href="https://www.linkedin.com/in/marius-le-douarin-9053451a0/"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://github.com/MariusLD"><i class="ri-github-fill"></i></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./ressources/03.jpg">
+                    <h3>Mathys Georgeais</h3>
+                    <h5>Soundtrack Producer</h5>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/mathys-georgeais-924658225/"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://on.soundcloud.com/1iqbo"><i class="ri-music-2-fill"></i></a>
+                        <a href="https://www.youtube.com/channel/UCpDNCGIswYEouUTzf7LzKHw"><i class="ri-youtube-fill"></i></a>
                     </div>
                 </div>
             </div>
