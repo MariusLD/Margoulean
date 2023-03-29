@@ -9,6 +9,18 @@
         <script src="components/header.js" type="text/javascript" defer></script>
     </head>
     <body>
+
+        <audio id="myAudio" hidden controls="">
+            <source src="./ressources/MARGOULEAN.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            function myFunction() {
+                document.getElementById("myAudio").play();
+            }
+            myFunction();
+        </script>
+
         <div class="hero">
             <header-component></header-component>
 
