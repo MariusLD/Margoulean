@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 
 *{
-    font-family: 'Bebas Neue', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
+    font-family: 'Bebas Neue', cursive;
     overflow: hidden;
 }
 body::before {
@@ -166,3 +167,68 @@ body span:before{
         opacity: 0;
     }
 }
+
+#preloader{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #9400d3, #8a2be2, #7b5d9f, #5c5c89, #264653);
+}
+
+#preloader h2{
+    position: absolute;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+#preloader .loader{
+    position: absolute;
+    top: 15%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.25);
+    filter: url(#Gooey);
+}
+
+#preloader .loader span{
+    position: absolute;
+    left: 0;
+    transform-origin: 150px;
+    width: 100px;
+    height: 100px;
+    background: #d75fd7;
+    border-radius: 50%;
+    animation: loading 5s ease-in-out infinite;
+    animation-delay: calc(0.15s * var(--i));
+}
+
+@keyframes loading {
+    0%, 10%{
+        width: 100px;
+        height: 100px;
+        transform: rotate(0deg) translate(120px);
+    }
+    40%, 70%{
+        width: 40px;
+        height: 40px;
+        transform: rotate(calc(360deg / 8 * var(--i)));
+        box-shadow: 0 0 0 10px #d75fd7;
+    }
+    90%, 100%{
+        width: 100px;
+        height: 100px;
+        transform: rotate(0deg) translate(120px);
+    }
+}
+
+#preloader svg{
+    width: 0;
+    height: 0;
+}
+

@@ -9,18 +9,33 @@
         <script src="components/header.js" type="text/javascript" defer></script>
     </head>
     <body>
-
-        <audio id="myAudio" hidden controls="">
+        <div id="preloader">
+            <h2>Loading</h2>
+            <div class="loader">
+                <span style="--i:0"></span>
+                <span style="--i:1"></span>
+                <span style="--i:2"></span>
+                <span style="--i:3"></span>
+                <span style="--i:4"></span>
+                <span style="--i:5"></span>
+                <span style="--i:6"></span>
+                <span style="--i:7"></span>
+            </div> 
+            <svg>
+                <filter id="Gooey">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+                    <feColorMatrix Values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 20 -10"/>
+                </filter>
+            </svg>
+        </div>
+        <audio id="myAudio" hidden controls="" loop>
             <source src="./ressources/MARGOULEAN.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        <script>
-            function myFunction() {
-                document.getElementById("myAudio").play();
-            }
-            myFunction();
-        </script>
-
         <div class="hero">
             <header-component></header-component>
 
@@ -76,5 +91,24 @@
                 </div>
             </div>
         </div>
+        <script>
+            let loaded = false
+            let enoughTimePassed = false
+
+            window.addEventListener("load", function() {
+            if (enoughTimePassed) { hidePreloader() }
+            loaded = true
+            })
+
+            setTimeout(() => {
+            if (loaded) { hidePreloader() }
+            enoughTimePassed = true
+            }, 6000)
+
+            function hidePreloader() {
+            document.getElementById("myAudio").play();
+            document.getElementById("preloader").remove()
+            }
+        </script>
     </body>
 </html>
