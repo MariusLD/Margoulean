@@ -9,6 +9,29 @@
     <body>
         <div class="hero">
             <header-component></header-component>
+            <div class="container">
+                <header>
+                    <h1>Your Shopping Cart</h1>
+                    <div class="shopping">
+                        <img src="ressources/shopping.svg">
+                        <span class="quantity">0</span>
+                    </div>
+                </header>
+        
+                <div class="list">
+                  
+                </div>
+            </div>
+            <div class="card">
+                <h1>Card</h1>
+                <ul class="listCard">
+                </ul>
+                <div class="checkOut">
+                    <div class="total">0</div>
+                    <div class="closeShopping">Close</div>
+                </div>
+            </div>
+            <script src="./components/store.js"></script>
             <div class="slider">
                 <div class="slides">
                     <input type="radio" name="radio-btn" id="radio1" checked onclick="setCounter(2)">
@@ -55,6 +78,6 @@
                     counter = value;
                 }
             </script>
-        </div>
+    </div>
     </body>
 </html>
