@@ -8,6 +8,16 @@
     box-sizing: border-box;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
 .hero{
     width: 100%;
     height: 100vh;
@@ -149,10 +159,21 @@ header .shopping span{
 }
 .list .item img{
     width: 90%;
+    border-radius: 50%
 }
 .list .item .title{
     font-weight: 600;
+    position: relative;
+    top: 10px;
 }
+.list .item .title:hover{
+    animation: color-change 1s infinite;
+}
+@keyframes color-change {
+    0% { color: #7E5BEF; }
+    50% { color: #000; }
+    100% { color: #7E5BEF; }
+  }
 .list .item .price{
     margin: 10px;
 }

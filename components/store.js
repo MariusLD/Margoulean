@@ -18,37 +18,37 @@ let products = [
         id: 1,
         name: 'Discovery Pack Margoulean Sample',
         image: '1.png',
-        price: 20
+        price: '$20'
     },
     {
         id: 2,
         name: 'Bundle All-in-One',
         image: '2.png',
-        price: 20
+        price: '$20'
     },
     {
         id: 3,
         name: 'Bundle Soft Party',
         image: '3.png',
-        price: 20
+        price: '$20'
     },
     {
         id: 4,
         name: 'Bundle Party Hard',
         image: '4.png',
-        price: 20
+        price: '$20'
     },
     {
         id: 5,
         name: 'Share with Friends Pack',
         image: '5.png',
-        price: 20
+        price: '$20'
     },
     {
         id: 6,
         name: 'Share with Family Pack',
         image: '6.png',
-        price: 20
+        price: '$20'
     }
 ];
 let listCards  = [];
