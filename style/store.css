@@ -8,16 +8,6 @@
     box-sizing: border-box;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
-
 .hero{
     width: 100%;
     height: 100vh;
@@ -156,10 +146,23 @@ header .shopping span{
     padding: 20px;
     box-shadow: 0 50px 50px #757676;
     letter-spacing: 1px;
+    outline: .1rem solid #222;
+    outline-offset: -0.5rem;
+    transition: outline-width 0.5s, outline-offset 0.5s;
 }
 .list .item img{
     width: 90%;
     border-radius: 50%
+}
+.list .item:hover{
+    outline: .3rem solid #000;
+    outline-offset: 0;
+}
+.list .item:hover img{
+    transform: scale(.9)
+}
+.list .item:hover .title{
+    animation: color-change 1.5s infinite;
 }
 .list .item .title{
     font-weight: 600;
@@ -167,12 +170,12 @@ header .shopping span{
     top: 10px;
 }
 .list .item .title:hover{
-    animation: color-change 1s infinite;
+    cursor: pointer;
 }
 @keyframes color-change {
-    0% { color: #7E5BEF; }
-    50% { color: #000; }
-    100% { color: #7E5BEF; }
+    0% { color: #000; }
+    50% { color: #8257e5; }
+    100% { color: #000; }
   }
 .list .item .price{
     margin: 10px;
@@ -250,3 +253,47 @@ header .shopping span{
 .listCard .count{
     margin: 0 10px;
 }
+
+.products-preview .preview{
+    display: inline-block;
+    padding:2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 40rem;
+    border-radius: 10%;
+ }
+.products-preview .preview .preview-title{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 2.5rem;
+   animation: color-change 1.5s infinite;
+}
+.products-preview .preview .preview-image{
+    height: 20rem;
+    background: #fff;
+    position: relative;
+ }
+.products-preview .preview .preview-image img {
+    max-width: 100%;
+    height: 20rem;
+    display: center;
+}
+.products-preview .preview .preview-description{
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #777;
+}
+.products-preview .preview .preview-price{
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #27ae60;
+}
+.fa-circle-xmark {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
