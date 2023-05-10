@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const glassImg = document.querySelector('#glass')
     this.cx = canvasWidth * 0.5
     this.cy = canvasHeight * 0.8
-    const thickness = 25
+    const thickness = 10
     const wallColor = '#00000000'
 
     const left = Bodies.rectangle(this.cx - 60, this.cy, thickness, 150, {
@@ -86,7 +86,7 @@ window.addEventListener('DOMContentLoaded', () => {
       angle: Math.PI / 180 * 15,
       render: { fillStyle: wallColor }
     })
-    const bottom = Bodies.rectangle(this.cx - 10, this.cy + 72, 85, thickness * 2, {
+    const bottom = Bodies.rectangle(this.cx - 10, this.cy + 72, 85, thickness, {
       chamfer: { radius: 20 },
       isStatic: true,
       render: { fillStyle: wallColor }
