@@ -19,54 +19,54 @@ let products = [
         name: 'Discovery Pack Margoulean Sample',
         image: '1.png',
         price: 20,
-        productDescription : 'a.',
+        productDescription : 'Embark on a tantalizing journey of flavors with our Discovery Pack Margoulean Sample. This pack is perfect for those seeking a delightful introduction to our soft purple drank.',
         stars : 4.5,
-        feddbacks : 100
+        feddbacks : 857
     },
     {
         id: 2,
-        name: 'Bundle All-in-One',
+        name: 'Single Can',
         image: '2.png',
-        price: 20,
-        productDescription : 'b.',
-        stars : 4,
-        feddbacks : 100
+        price: 9,
+        productDescription : 'For a quick and refreshing escape, our Single Can of Margoulean is your ideal companion. Take a sip! Let the velvety texture and enchanting flavors captivate your senses.',
+        stars : 3.5,
+        feddbacks : 492
     },
     {
         id: 3,
-        name: 'Bundle Soft Party',
+        name: 'Bundle All-in-one',
         image: '3.png',
-        price: 20,
-        productDescription : 'c.',
-        stars : 4,
-        feddbacks : 100
+        price: 40,
+        productDescription : 'Unlock the full Margoulean experience with our Bundle All-in-one pack. This thoughtfully curated collection combines the finest flavors of Margoulean in a comprehensive package.',
+        stars : 5,
+        feddbacks : 349
     },
     {
         id: 4,
-        name: 'Bundle Party Hard',
+        name: 'Combo Pack',
         image: '4.png',
         price: 20,
-        productDescription : 'd.',
+        productDescription : 'Looking to satisfy your Margoulean cravings while discovering new favorites? Our Combo Pack is the ultimate choice. Elements carefully chosen to complement each other and provide an unforgettable tasting experience.',
         stars : 4,
-        feddbacks : 100
+        feddbacks : 228
     },
     {
         id: 5,
         name: 'Share with Friends Pack',
         image: '5.png',
-        price: 20,
-        productDescription : 'e.',
-        stars : 4,
+        price: 13,
+        productDescription : 'Spread the joy of Margoulean with our Share with Friends Pack. This pack is designed for those delightful moments when you want to indulge in soft purple bliss with your loved ones.',
+        stars : 4.5,
         feddbacks : 100
     },
     {
         id: 6,
-        name: 'Share with Family Pack',
+        name: 'Soft Drink Pack',
         image: '6.png',
-        price: 20,
-        productDescription : 'f.',
-        stars : 4,
-        feddbacks : 100
+        price: 7,
+        productDescription : 'Quench your thirst with our Soft Drink Pack, exclusively featuring Margoulean. This pack offers a refreshing double cup of our beloved soft purple drink, perfect for those seeking a non-alcoholic and irresistibly delicious beverage.',
+        stars : 3.5,
+        feddbacks : 303
     }
 ];
 let listCards  = [];

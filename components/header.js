@@ -32,7 +32,9 @@ class Header extends HTMLElement {
             }
         </style>
         <nav>
-            <img src="./ressources/lean.png" class="logo">
+            <a href="fill.html">
+                <img src="./ressources/lean.png" class="logo">
+            </a>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="contact.html">INFO</a></li>
