@@ -17,7 +17,7 @@ let products = [
     {
         id: 1,
         name: 'Discovery Pack Margoulean Sample',
-        image: '1.png',
+        image: '3.png',
         price: 20,
         productDescription : 'Embark on a tantalizing journey of flavors with our Discovery Pack Margoulean Sample. This pack is perfect for those seeking a delightful introduction to our soft purple drank.',
         stars : 4.5,
